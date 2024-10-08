@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+
+:root {
+  --red: #e50914;
+  --black: #000000;
+  --light-color: #181818;
+  --box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  height: fit-content;
+}
+
+body {
+  background-color: var(--light-color);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: var(--light-color);
+}
+
+.heading {
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--black);
+  padding: 1rem 7%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--red);
+}
+
+header .navbar a,
+.btn {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+header .navbar a.active,
+header .navbar a:hover,
+.btn {
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  line-height: 4.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  transform: rotate(360deg);
+  color: var(--red);
+  background: #fff;
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+/* search icon */
+.search-box {
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+  padding: 0 0 0 30px;
+  background: var(--red);
+  border-radius: 4rem;
+  margin-left: 1rem;
+}
+
+#search-input {
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+}
+
+#search-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#clear-icon {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+#clear-icon:hover {
+  color: #ff4500;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* AKHIR NAVBAR */
+
+.home {
+  padding: 0;
+}
+
+.home .box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background-size: cover;
+  background-position: center !important;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+
+.home .second {
+  justify-content: flex-start;
+}
+.home .box .content {
+  width: 50rem;
+  margin-top: 160px;
+  text-align: start;
+}
+
+.home .box .content h3 {
+  font-size: 7rem;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+
+.home .box .content p {
+  line-height: 2;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  mix-blend-mode: difference;
+  padding: 1rem 0;
+}
+
+.trending,
+.latest {
+  padding: 5rem;
+  background: var(--light-color);
+}
+
+.trending .box,
+.latest .box {
+  width: 270px;
+  height: 175px;
+  background-size: cover;
+  object-fit: fill;
+}
+
+.trending .content h3,
+.latest .content h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.trending .content p,
+.latest .content p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.trending-slide .swiper-slide,
+.latest-slide .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  max-width: 271px;
+  max-height: 320px;
+}
+
+.swiper-slide {
+  width: calc(33.333% - 20px);
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.content {
+  text-align: center;
+}
+
+/* copyright */
+footer {
+  background-color: var(--black);
+  color: white;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.copyright .logo {
+  color: var(--red);
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+.copyright p {
+  font-size: 0.9rem;
+  color: var(--red);
+  font-size: 2rem;
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .search-box #search-icon {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: var(--red);
+  }
+
+  .swiper-slide {
+    width: calc(50% - 20px);
+  }
+  .search-box {
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: 180px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Agar card tetap di tengah */
+  }
+}
+
+@media (max-width: 468px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .swiper-slide {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar card */
+    justify-content: center; /* Agar card tetap di tengah */
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .home .box .content h3 {
+    font-size: 4rem;
+  }
+
+  .home .box .content p {
+    font-size: 1.2rem;
+  }
+
+  .trending .box,
+  .latest .box {
+    height: 150px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VocFilm</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/letter_V_red-1024.png">
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+
+    <!-- font -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- font -->
+
+    <!-- styling css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- styling css -->
+
+  </head>
+  <body>
+
+    <!-- HEADER START -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-intifity"></i>VocFilm.</a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#watchlist">Watchlist</a>
+        <a href="#popular">Popular</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <div class="search-box">  
+          <input type="search" id="search-input" placeholder="Search movie">
+          <i class="fas fa-search" id="search-icon"></i>
+          <i class="fas fa-times" id="clear-icon"></i>
+        </div>
+      </div>      
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HOME SECTION START -->
+    <section class="home" id="home">
+      <div class="swiper home-slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="box"
+              style="
+                background-image: url(https://wallpapercave.com/wp/wp8562142.jpg);
+              "
+            >
+              <div class="content" style="margin-top: 200px">
+                <h3>Moana</h3>
+                <p>
+                  Moana, the strong-willed daughter of a Polynesian village
+                  chief, sets sail to save her people.
+                </p>
+                <a href="https://www.imdb.com/title/tt3521164/?ref_=nv_sr_srsg_1_tt_5_nm_2_in_0_q_moana" class="btn">check details</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="box second"
+              style="
+                background-image: url(https://wallpapercave.com/wp/wp11075610.jpg);
+              "
+            >
+              <div class="content">
+                <h3>Frozen</h3>
+                <p>
+                  Elsa, the Snow Queen, has a gift — the power to create ice and
+                  snow. But she struggles with controlling it.
+                </p>
+                <a href="https://www.imdb.com/title/tt2294629/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_frozen" class="btn">check details</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="box"
+              style="
+                background-image: url(https://assets.rappler.com/550B7FA5408643A990562C71AB8D0F5A/img/C44FDA3974E64407AEB5A15E1FF0E6DA/June_09_2017-coco-001.jpg);
+              "
+            >
+              <div class="content">
+                <h3>Coco</h3>
+                <p>
+                  A young boy named Miguel dreams of becoming a musician and
+                  embarks on a journey through the Land of the Dead.
+                </p>
+                <a href="https://www.imdb.com/title/tt2380307/?ref_=nv_sr_srsg_2_tt_2_nm_4_in_0_q_coco" class="btn">check details</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="box second"
+              style="
+                background-image: url(https://wallpapers.com/images/hd/knockout-zootopia-tandem-vlrb7cnhhvi9zwwe.jpg);
+                margin-top: 60px;
+              "
+            >
+              <div class="content" style="margin-top: 10px">
+                <h3>Zootopia</h3>
+                <p>
+                  In a city of animals, a rabbit cop and a cynical con artist
+                  fox must work together to uncover a conspiracy.
+                </p>
+                <a href="https://www.imdb.com/title/tt2948356/fullcredits" class="btn">check details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOME SECTION END -->
+
+    <!-- TRENDING SECTION START -->
+    <section class="trending" id="trending">
+      <h1 class="heading">Trending</h1>
+      <div class="swiper trending-slide">
+        <div class="slide-wrapper container" id="trending-container">
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- TRENDING SECTION END -->
+
+    <!-- LATEST FILM SECTION START -->
+    <section class="latest" id="latest">
+      <h1 class="heading">Latest Animated Films</h1>
+      <div class="swiper latest-slide">
+        <div class="slide-wrapper container" id="latest-container">
+        </div>
+      </div>
+    </section>
+    <!-- LATEST FILM SECTION END -->
+
+    <!-- COPYRIGHT -->
+    <footer>     
+      <div class="copyright">
+      <a href="#" class="logo">
+        <i class="fas">VocFilm.</i>
+      </a>
+      <p>@ AisyahLailia. All rights reserved</p>
+     </div>
+    </footer>
+    <!-- COPYRIGHT -->
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+    <!-- script js -->
+
+  </body>
+</html>
